@@ -1,5 +1,5 @@
 {
-	"name": "WOT",
+	"name": "OneClickCharity",
 	"version": "1.2.8",
 	"default_locale": "en",
 	"description": "Web of Trust shows you which websites people trust for safe surfing, shopping and searching on the web.",
@@ -17,7 +17,7 @@
 	],
 	"background_page": "background.html",
 	"browser_action": {
-		"default_title": "WOT",
+		"default_title": "OneClickCharity",
 		"default_icon": "skin/fusion/19_19/default.png",
 		"popup": "ratingwindow.html"
 	},
