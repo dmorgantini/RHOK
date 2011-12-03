@@ -21,7 +21,7 @@
 var wot = {
 	version: 20111124,
 	platform: "chrome",
-	debug: false,
+	debug: true,
 	default_component: 0,
 
 	components: [

@@ -33,7 +33,8 @@
 				"content/warning.js",
 				"content/url.js",
 				"content/popup.js",
-				"content/search.js"
+				"content/search.js",
+				"jquery.js"
 			],
 			"run_at": "document_start",
 			"all_frames": true 

@@ -92,15 +92,6 @@ $.extend(wot, { url: {
 		return null;
 	},
 
-	getuniquehostnames: function(urls)
-	{
-		return wot.getuniques(urls.map(function(url) {
-						return wot.url.gethostname(url);
-					}));
-	},
-
-	/* shared hosts */
-
 	sharedhosts: {},
 
 	getsharedlevel: function(host)

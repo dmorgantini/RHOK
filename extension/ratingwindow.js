@@ -349,7 +349,7 @@ $.extend(wot, { ratingwindow: {
 				".wot-user-text, " +
 				"#wot-message-text")
 			.toggleClass("accessible", bg.wot.prefs.get("accessible"));
-
+##
 		/* texts */
 		wot.components.forEach(function(item) {
 			$("#wot-rating-" + item.name +
