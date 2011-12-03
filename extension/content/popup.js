@@ -19,28 +19,10 @@
 */
 
 const WOT_POPUP_HTML =
-	"<div id=\"wot-logo\" class=\"{ACCESSIBLE}\"></div>" +
-	"<div id=\"wot-ratings{ID}\" class=\"wot-ratings\">" +
-		"<div id=\"wot-r0-stack{ID}\" class=\"wot-stack\">" +
-			"<div id=\"wot-r0-header{ID}\" class=\"wot-header\">{POPUPTEXT0}</div>" +
-			"<div id=\"wot-r0-rep{ID}\" class=\"wot-rep {ACCESSIBLE}\"></div>" +
-			"<div id=\"wot-r0-cnf{ID}\" class=\"wot-cnf\"></div>" +
-		"</div>" +
-		"<div id=\"wot-r1-stack{ID}\" class=\"wot-stack\">" +
-			"<div id=\"wot-r1-header{ID}\" class=\"wot-header\">{POPUPTEXT1}</div>" +
-			"<div id=\"wot-r1-rep{ID}\" class=\"wot-rep {ACCESSIBLE}\"></div>" +
-			"<div id=\"wot-r1-cnf{ID}\" class=\"wot-cnf\"></div>" +
-		"</div>" +
-		"<div id=\"wot-r2-stack{ID}\" class=\"wot-stack\">" +
-			"<div id=\"wot-r2-header{ID}\" class=\"wot-header\">{POPUPTEXT2}</div>" +
-			"<div id=\"wot-r2-rep{ID}\" class=\"wot-rep {ACCESSIBLE}\"></div>" +
-			"<div id=\"wot-r2-cnf{ID}\" class=\"wot-cnf\"></div>" +
-		"</div>" +
-		"<div id=\"wot-r4-stack{ID}\" class=\"wot-stack\">" +
-			"<div id=\"wot-r4-header{ID}\" class=\"wot-header\">{POPUPTEXT4}</div>" +
-			"<div id=\"wot-r4-rep{ID}\" class=\"wot-rep {ACCESSIBLE}\"></div>" +
-			"<div id=\"wot-r4-cnf{ID}\" class=\"wot-cnf\"></div>" +
-		"</div>" +
+	"<div class=\"wot-ratings\">" +
+		"<a href=\"http://uk.movember.com/mospace/2261386/\" target=\"_blank\">" 
+		+ "Donate" 
+		+ "</a>"
 	"</div>";
 
 wot.popup = {
@@ -48,10 +30,10 @@ wot.popup = {
 	version:		0,
 	offsety:		15,
 	offsetx:		0,
-	height:			235,
+	height:			52,
 	width:			137,
 	ratingheight:	52,
-	areaheight:		214,
+	areaheight:		52,
 	barsize:		20,
 	offsetheight:	0,
 	postfix:		"-" + Date.now(),
@@ -429,7 +411,7 @@ wot.popup = {
 									wot.popup.postfix);
 
 				if (target) {
-					wot.post("search", "openscorecard", { target: target });
+					/*wot.post("search", "openscorecard", { target: target }); */
 					wot.popup.hide(wot.popup.version, true);
 				}
 			}
