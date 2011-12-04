@@ -1,6 +1,6 @@
 {
-    "name": "OneClickCharity",
-    "version": "0.0.1",
+    "name": "CharityClick",
+    "version": "0.0.2",
     "description": "Give to charities without the hassles of taking out your wallet whenever you are inspired by a video or article.",
     "icons": {
         "16": "skin/flying-heart-icon_16.png",
@@ -13,7 +13,7 @@
     ],
     "background_page": "background.html",
     "browser_action": {
-        "default_title": "OneClickCharity",
+        "default_title": "CharityClick",
         "default_icon": "skin/flying-heart-icon_19.png",
         "popup": "ratingwindow.html",
         "css":[ "skin/charityClicks.css"],
