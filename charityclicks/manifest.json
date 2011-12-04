@@ -1,35 +1,39 @@
 {
-	"name": "OneClickCharity",
-	"version": "0.0.1",
-	"description": "",
-	"icons": {
-		"16": "skin/flying-heart-icon_16.png",
-		"32": "skin/flying-heart-icon_32.png",
-		"48": "skin/flying-heart-icon_48.png",
-		"128": "skin/flying-heart-icon_128.png"
-	},
-	"permissions": [
-		"tabs"
-	],
-	"background_page": "background.html",
-	"browser_action": {
-		"default_title": "OneClickCharity",
-		"default_icon": "skin/flying-heart-icon_19.png",
-		"popup": "ratingwindow.html"
-	},
-	"content_scripts": [
-		{
-			"matches": [
-				"http://*/*",
-				"https://*/*"
-			],
+    "name": "OneClickCharity",
+    "version": "0.0.1",
+    "description": "Give to charities without the hassles of taking out your wallet whenever you are inspired by a video or article.",
+    "icons": {
+        "16": "skin/flying-heart-icon_16.png",
+        "32": "skin/flying-heart-icon_32.png",
+        "48": "skin/flying-heart-icon_48.png",
+        "128": "skin/flying-heart-icon_128.png"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "background_page": "background.html",
+    "browser_action": {
+        "default_title": "OneClickCharity",
+        "default_icon": "skin/flying-heart-icon_19.png",
+        "popup": "ratingwindow.html",
+        "css":[ "skin/charityClicks.css"],
+        "js": [
+            "jquery.js", "jquery.qtip.min.js", "ratingWindow.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
             "css":[ "skin/charityClicks.css"],
-			"js": [
-				"jquery.js", "jquery.qtip.min.js", "charityClicks.js"
-             ],
-			"run_at": "document_start",
-			"all_frames": true 
-		}
-	],
-	"options_page": "options.html"
+            "js": [
+                "jquery.js", "jquery.qtip.min.js", "charityClicks.js"
+            ],
+            "run_at": "document_start",
+            "all_frames": true
+        }
+    ],
+    "options_page": "options.html"
 }
