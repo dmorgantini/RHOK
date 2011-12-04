@@ -3,10 +3,10 @@
 	"version": "0.0.1",
 	"description": "",
 	"icons": {
-		"16": "skin/fusion/icons/16.png",
-		"32": "skin/fusion/icons/32.png",
-		"48": "skin/fusion/icons/48.png",
-		"128": "skin/fusion/icons/128.png"
+		"16": "skin/flying-heart-icon_16.png",
+		"32": "skin/flying-heart-icon_32.png",
+		"48": "skin/flying-heart-icon_48.png",
+		"128": "skin/flying-heart-icon_128.png"
 	},
 	"permissions": [
 		"tabs"
@@ -14,7 +14,7 @@
 	"background_page": "background.html",
 	"browser_action": {
 		"default_title": "OneClickCharity",
-		"default_icon": "skin/fusion/19_19/default.png",
+		"default_icon": "skin/flying-heart-icon_19.png",
 		"popup": "ratingwindow.html"
 	},
 	"content_scripts": [

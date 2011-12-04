@@ -16,6 +16,10 @@ $(document).ready(function() {
             infoLink: "http://england.shelter.org.uk/",
             phoneNumber: "call us on <b>0300 330 1234</b>"
 
+        },
+        4: { name: "Prajwala",
+            donateLink: "http://www.globalgiving.org/projects/a-new-shelter-for-sex-trafficking-victims-in-india",
+            infoLink: "http://www.prajwalaindia.com/"
         }
     };
 
@@ -24,11 +28,10 @@ $(document).ready(function() {
 
         $('a:contains(' + charity[id].name + ')').each(function() {
             var element = $('<div/>').appendTo(this).attr("style", "display: inline-block; " +
-                "cursor: pointer; " +
                 "width: 16px; " +
                 "height: 16px;" +
                 "margin-left: 5px;" +
-                "background: url('" + chrome.extension.getURL("skin/fusion/16_16/plain/r5.png") + "')");
+                "background: url('" + chrome.extension.getURL("skin/flying-heart-icon_16.png") + "')");
 
 
             var qtipContent = '<a class="donation" href="' + charity[id].donateLink + '" target="_blank">Donate Now</a>' +
