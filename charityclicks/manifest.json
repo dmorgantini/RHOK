@@ -1,7 +1,7 @@
 {
     "name": "CharityClick",
-    "version": "0.0.2",
-    "description": "Give to charities without the hassles of taking out your wallet whenever you are inspired by a video or article.",
+    "version": "0.0.3",
+    "description": "See charities to donate to on the hover of your mouse",
     "icons": {
         "16": "skin/flying-heart-icon_16.png",
         "32": "skin/flying-heart-icon_32.png",
