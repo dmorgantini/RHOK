@@ -32,8 +32,8 @@
             <% using (Html.BeginForm())
                { %>
             <%: Html.ValidationSummary(true) %>
-            <h2>
-                Register your Charity Here</h2>
+            <h2>It is free to register your charity with us.</h2>
+                Please complete the form below. Once we have verified that you are a registered charity, and you have a secure payment system, your organisation will be added to our site and you’ll be able to enjoy seamless donations.
             <div id="spotlite">
                 <fieldset>
                     <legend>Account Information</legend>
@@ -62,19 +62,21 @@
                         <%: Html.PasswordFor(m => m.TwitterID) %>
                     </div>
                     <div class="editor-label">
-                        <%: Html.LabelFor(m => m.DirectDonateLink)%>
+                    <i>
+                        <%: Html.LabelFor(m => m.DirectDonateLink)%> 
+                        </i>
                     </div>
                     <div class="editor-field">
                         <%: Html.PasswordFor(m => m.DirectDonateLink)%>
                     </div>
-<%--                    <div class="editor-label">
+                    <div class="editor-label">
                         <%: Html.LabelFor(m => m.CharityLogo)%>
                     </div>
                     <div class="editor-field">
-                        <%: Html.PasswordFor(m => m.CharityLogo)%> <input type="submit" value="Upload" />
+                        <%: Html.PasswordFor(m => m.CharityLogo)%> <input type="submit" value="Upload" /> <input type="submit" value="Register" />
                     </div>
---%>                    <p>
-                        <input type="submit" value="Register" />
+                    <p>
+                        
                     </p>
                 </fieldset>
             </div>

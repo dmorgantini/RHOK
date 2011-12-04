@@ -12,19 +12,19 @@ namespace WebUI.Models
     {
         public Int32 iD { get; set; }
 
-        [Display(Name = "Charity Name")]
+        [Display(Name = "Name")]
         public string UserName { get; set; }
 
-        [Display(Name = "RegisterationNumber")]
+        [Display(Name = "Charity No")]
         public string RegisterationNumber { get; set; }
 
         [Display(Name = "Charity Website")]
         public string CharityProfile { get; set; }
 
-        [Display(Name = "Twitter ID")]
+        [Display(Name = "Direct Donate Link")]
         public string TwitterID { get; set; }
 
-        [Display(Name = "Direct Donate Link")]
+        [Display(Name = "Enter the direct donate link that allows the donor to give to your charity. This can be your donate page, your paypal link or any other secure payment page.")]
         public string DirectDonateLink { get; set; }
 
         [Display(Name = "CharityLogo")]
