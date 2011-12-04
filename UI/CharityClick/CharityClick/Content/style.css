@@ -1,0 +1,348 @@
+﻿/*  
+  Please do not remove this informations or keep link back to me on the bottom of the site
+  
+  Theme name: Universum 
+  Author's name: Martin 'duno' Polacik
+  Author's web: www.fromhell.eu
+  Date created: 02.08.2010
+  Time spent: 4 hours
+  
+  Licence and additional: 
+    - Free for Non-commercial use 
+    - Icons created by Martin 'duno' Polacik ONLY for this theme
+    - All example images used in theme are royalty free images
+      
+  Please do not remove this informations or keep link back to me on the bottom of the site  
+*/
+body {
+	margin: 0px;	
+	padding:15px;
+	background: #000 url(images/bg-stripes.png);
+	font: 75%/1.6 "trebuchet ms", "Geneva CE", lucida, sans-serif;
+}
+/*-----------------------------layout------------------*/
+#main_container{
+  width:900px;
+  height:auto;
+  margin:auto;
+  background-color:#FFFFFF;
+}
+/*-----------------------------header and logo------------------*/
+#header
+{
+  width:900px;
+}
+#logo
+{
+  padding:10px;
+}
+#logo img{
+  float:left;
+}
+#logo h1{
+  font-size:350%;
+  margin:0px;
+  margin-left:50px
+}
+#logo a{
+  color:#ead518;
+  text-decoration:none;
+}
+#logo a span{
+  color:#59cef9;
+}
+#logo a sup{
+  font-size:50%;
+}
+#logo h1 a span, .footer-left a span{
+  color:#a6ce39;
+}
+
+/*-----------------------------main content------------------*/
+#main-block{
+  padding:10px;
+  border-bottom:1px solid #ccc;
+}
+#left-content{
+  padding:10px;
+	width: 290px;
+	float: left;
+}
+#middle-content{
+	padding:10px;
+  width: 275px;
+	float: left;
+}
+#right-content{
+  padding:10px;
+	width: 275px;
+	float: right;
+}
+#spotlite{
+  width:900px;
+  height:300px;
+  clear:both;
+  background: url(images/spotlite.jpg) no-repeat #fff;  
+  border-bottom:1px solid #ccc;  
+}
+#spotlite h2{
+  padding-left:30px;
+  padding-top:30px;
+  color:#B12314;  
+  font-size:150%;
+  letter-spacing:2px;
+}
+#spotlite p{
+  width:550px;
+  float:left;
+  padding-left:30px;
+  color:#000;
+  margin-bottom:15px;
+  font-size:120%;
+}
+#spotlite span.colored{
+  color:#C10743;
+  text-decoration:underline;
+}
+/*-----------------------------footer------------------*/
+#footer
+{
+  color:#fff;
+  clear:both; 
+  overflow:hidden; 
+  margin:0 auto;  
+  background: url(images/footer_inset.gif) repeat-x top left #191919;
+}
+.footer-left
+{
+  float:left;
+  padding:10px;
+  padding:10px;
+  color:#ddd;
+    font-size:250%;
+}
+.footer-left img{
+  float:left;
+}
+.footer-left p{
+  margin:0px; 
+  padding:0px 0px 0px 50px;
+  font-size:250%;
+  font-weight:bold;
+}
+.footer-left a{
+  color:#ead518;
+  text-decoration:none;
+}
+.footer-right
+{
+  float:right;
+  padding:20px;
+}
+.footer-right a
+{
+  text-decoration:none;
+  color: #fff;
+  padding-left:10px;
+}
+.footer-right a:hover
+{
+  text-decoration:underline;
+  color: #fff;
+}
+.footer-right a#active
+{
+  text-decoration:underline;
+  color: #fff;
+}
+.footer-copyright
+{
+  float:left;
+  padding-left:10px;
+  padding-top:10px;
+  color:#191919;
+  font-size:85%;  
+}
+.footer-copyright a
+{
+  color:#000;
+}
+.footer-copyright a:hover
+{
+  color:#ccc;
+  text-decoration:underline;
+}
+.footer-left a,.footer-left  img{
+  border:0px;
+  text-decoration:none;
+}
+/*----------------------menu and submenu-------------------------*/
+#topmenu{position:relative;display:block;height:42px;font-size:11px;font-weight:bold;background:#f7951e;}
+#topmenu ul{margin:0px;padding:0;list-style-type:none;width:auto;}
+#topmenu ul li{display:block;float:left;margin:0 1px 0 0;}
+#topmenu ul li a{display:block;float:left;color:#fff;text-decoration:none;padding:14px 22px 0 22px;height:28px;}
+#topmenu ul li a:hover,#topmenu ul li#current{color:#000;background:#ead518;}
+#topmenu ul li#current a{color:#000}
+#submenu{position:relative;display:block;height:42px;font-weight:bold;background:#ead518;}
+#submenu ul{margin:0px;padding:0;list-style-type:none;width:auto;}
+#submenu ul li{display:block;float:left;}
+#submenu ul li a{display:block;float:left;color:#fff;text-decoration:none;padding:14px 22px 0 22px;height:28px;}
+#submenu ul li a:hover,#submenu ul li#current{color:#202020;text-decoration:underline;}
+#submenu ul li#current a{color:#202020;}
+#menu ul{margin:0px;padding:0;list-style-type:none;width:auto;}
+#menu ul li{display:block;float:left;margin:0 1px 0 0;}
+/*----------------------additional styling-------------------------*/
+h1{
+  padding:5px 0 5px 0;
+  margin:0px;
+  color:#f7951e;
+}
+h2{
+  padding:5px 0 5px 0;
+  margin:0px;
+  color:#f7951e;
+}
+h3{
+  padding:5px 0 5px 0;
+  margin:0px;
+  color:#59cef9;
+}
+h4{
+  padding:5px 0 5px 0;
+  margin:0px;
+  color:#C10743;
+}
+p{
+  text-align:justify;
+  padding:2px 0 2px 0;
+  margin:0px;
+}
+img.left_img{
+  float:left;
+  margin:0 10px 0 0 ;
+}
+img.box_img{
+  float:left;
+  padding:0 20px 0 0 ;
+}
+.form p{
+  color:#666666;
+  margin-bottom:20px;
+  border-bottom:solid 1px #eee;
+  padding-bottom:10px;
+}
+.form label{
+  display:block;
+  font-weight:bold;
+  text-align:right;
+  width:300px;
+  float:left;
+}
+.form .small{
+  color:#666666;
+  display:block;
+  font-weight:normal;
+  text-align:right;
+  width:300px;
+}
+.form input{
+  float:left;
+  padding:5px;
+  border:solid 1px #ccc;
+  width:200px;  
+  margin-top:5px;
+  margin-left:10px;
+}
+.form .reqInfo{
+  float:right;
+  width:200px;
+  color:#E92518;
+  padding:5px;
+  margin-top:5px;  
+  margin-right:140px;
+  font-weight:bold;
+}
+.form .optInfo{
+  float:right;
+  width:200px;
+  color:#59cef9;
+  padding:5px;
+  margin-top:5px;  
+  margin-right:140px;
+  font-weight:bold;
+}
+.form br{clear:both;}
+.form hr{
+  border: 1px solid #eee;
+  margin-top:15px;
+  margin-bottom:15px;  
+}
+.form .submit
+{
+  width:150px;
+  border:solid 1px #ccc;
+  font-weight:bold;
+}
+.form .reset
+{
+  margin-left:410px;
+  width:150px;
+  border:solid 1px #ccc;
+  font-weight:bold;
+  background:#fff;
+}
+blockquote {
+	font-style: italic;
+	border: #ccc 1px dashed;
+	background: #eee;
+	margin: 10px;
+	padding: 0px 20px;
+}
+.box-caption{
+  display:block;
+  padding-left:30px;
+}
+.info{
+  width:400px;
+  border:solid 1px #DEDEDE;
+  background:#FFFFCC url(images/info.png) 6px 8px no-repeat;
+  color:#222222;
+  margin:15px;
+  padding:6px;
+}
+.question{
+  width:400px;
+  border:solid 1px #DEDEDE;
+  background:#FFFFCC url(images/question.png) 6px 8px no-repeat;
+  color:#222222;
+  margin:15px;
+  padding:6px;
+}
+.error{
+  width:400px;
+  border:solid 1px #DEDEDE;
+  background:#FFFFCC url(images/error.png) 6px 8px no-repeat;
+  color:#222222;
+  margin:15px;
+  padding:6px;
+}
+.alert{
+  width:400px;
+  border:solid 1px #DEDEDE;
+  background:#FFFFCC url(images/alert.png) 6px 8px no-repeat;
+  color:#222222;
+  margin:15px;
+  padding:6px;
+}
+.read_more{
+  width: auto;
+  float:right;
+  padding:3px 15px 3px 0;
+}
+.read_more a{
+  text-decoration:underline;
+  color:#f7941d;
+}
+img{border:0px;}
+span#prevBtn{display:none;}
+span#nextBtn{display:none;}	
