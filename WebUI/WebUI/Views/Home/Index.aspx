@@ -75,7 +75,7 @@
             <!-- HEADER /-->
             <div id="header">
                 <div id="logo">
-                    <img src="../../Content/images/logo.png" alt="" title="" />
+                    <img src="../../Content/images/ChromeExtensionLogo.png" alt="" title=""  width ="80"/>
                     <h1>
                         Charity <span>Click</span><sup>1.0</sup></h1>
                     <%--<h1><a href="index.html">Charity <span>Click</span><sup>1.0</sup></a></h1>             --%>
@@ -97,15 +97,16 @@
             <!-- IMAGE SPOTLITE /-->
             <div id="spotlite">
                 <h2>
-                    Donate without taking out your wallet</h2>
+                    See charities to donate to on the hover of your mouse</h2>
                 <h2>
                     How it works</h2>
                 <p>
                     Charity Click detects charities registered with us whenever their name is mentioned
-                    on any website. If an article or video inspires you
-                    and you'd like to help the charity mentioned, simply mouse over the icon (insert
-                    icon) and click "donate now" to be taken straight to the charity's secure donation
-                    page or click "view charity information" to find out more about them.
+                    on any website. If an article or video inspires you and you'd like to help the charity
+                    mentioned, simply mouse over the icon
+                    <img src="../../Content/images/flying-heart-icon_16.png" />
+                    and click "donate now" to be taken straight to the charity's secure donation page
+                    or click "view charity information" to find out more about them.
                 </p>
             </div>
             <!-- IMAGE SPOTLITE - end /-->
@@ -117,15 +118,24 @@
                         Just click the "install to chrome". And the next time you see (insert icon) just
                         mouse over the icon and click straight to the charity donation page. It's that simple.
                     </p>
-                    <a href="http://www.chromeextensions.org/wp-content/uploads/2011/12/charityclicks1.crx">
+                    <a href="http://www.chromeextensions.org/wp-content/uploads/2011/12/charityclicks3.crx">
                         <img src="../../Content/images/AddChrome.png" alt="Install Chrome Extension Now">
                         </img>
                     </a>
-                    <p> 
-                                        <h2> See below example
-                    </h2>
+                    <p>
+                        Please install Chrome Extension and See how it works.. <a href="http://www.guardian.co.uk/society/2011/dec/04/charities-welcome-cash-for-homes?INTCMP=SRCH"
+                            target="_blank">charities-welcome-cash-for-homes</a> <a href="http://www.ted.com/speakers/sunitha_krishnan.html"
+                                target="_blank">sunitha_krishnan Profile on Ted</a>
+                    </p>
 
-                        <img src="../../Content/images/Example1.png" />
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" Text = "Charity Click">Tweet</a>
+                    <script type="text/javascript" src="//platform.twitter.com/widgets.js">
+                    </script>
+                    <p>
+                        <h2>
+                            See example below 
+                        </h2>
+                        <img src="../../Content/images/Example2.png" />
                     </p>
                 </div>
                 <div style="clear: both;">
@@ -135,8 +145,8 @@
             <div id="footer">
                 <div class="footer-left">
                     <a href="#logo">
-                        <img src="../../Content/images/logo-bottom.png" alt="" title="" />
-                        Click <span>Charity</span><sup>1.0</sup> </a>
+                        <img src="../../Content/images/flying-heart-icon_48.png" alt="" title="" />
+                        </a>
                 </div>
             </div>
             <div class="footer-copyright">

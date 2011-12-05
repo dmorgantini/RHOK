@@ -311,9 +311,7 @@ div#title {
     margin: 0.5em 0 0 0;
 }
 
-.text-box {
-    width: 30em;
-}
+
 
 .text-box.multi-line {
     height: 6.5em;

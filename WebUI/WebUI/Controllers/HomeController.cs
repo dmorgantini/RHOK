@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebUI.Models;
+using System.IO;
 namespace WebUI.Controllers
 {
     public class HomeController : Controller
@@ -30,7 +31,11 @@ namespace WebUI.Controllers
         [HttpPost]
         public ActionResult Edit(RegisterViewModel  rv)
         {
-            //Save it into database
+            //Save it into dataStore
+            //var sw = new StreamWriter("DataStore.xml");
+            //sw.Write(rv.CharityProfile,rv.DirectDonateLink,rv.RegisterationNumber,rv.UserName);
+            //sw.Flush();
+            //sw.Close();
             return View();
         }
 

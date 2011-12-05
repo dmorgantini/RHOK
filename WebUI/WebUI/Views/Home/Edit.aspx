@@ -12,9 +12,9 @@
             <!-- HEADER /-->
             <div id="header">
                 <div id="logo">
-                    <img src="../../Content/images/logo.png" alt="" title="" />
+                <img src="../../Content/images/ChromeExtensionLogo.png" alt="" title="" width ="80"/>
                     <h1>
-                        <a href="index.html">Charity <span>Click</span><sup>1.0</sup></a></h1>
+                        Charity <span>Click</span><sup>1.0</sup></h1>
                 </div>
                 <div id="topmenu">
                     <ul>
@@ -38,42 +38,42 @@
                 <fieldset>
                     <legend>Account Information</legend>
                     <div class="editor-label">
-                        <%: Html.LabelFor(m => m.UserName) %>
+                        <%: Html.LabelFor(m => m.CharityName) %>
                     </div>
                     <div class="editor-field">
-                        <%: Html.TextBoxFor(m => m.UserName) %>
+                        <%: Html.TextBoxFor(m => m.CharityName, new { style = "width:100px" })%>
                     </div>
                     <div class="editor-label">
-                        <%: Html.LabelFor(m => m.RegisterationNumber) %>
+                        <%: Html.LabelFor(m => m.CharityRegisterationNumber) %>
                     </div>
                     <div class="editor-field">
-                        <%: Html.TextBoxFor(m => m.RegisterationNumber) %>
+                        <%: Html.TextBoxFor(m => m.CharityRegisterationNumber)%>
                     </div>
                     <div class="editor-label">
-                        <%: Html.LabelFor(m => m.CharityProfile) %>
+                        <%: Html.LabelFor(m => m.CharityWebsite) %>
                     </div>
                     <div class="editor-field">
-                        <%: Html.TextBoxFor(m => m.CharityProfile) %>
+                        <%: Html.TextBoxFor(m => m.CharityWebsite)%>
                     </div>
                     <div class="editor-label">
-                        <%: Html.LabelFor(m => m.TwitterID) %>
+                        <%: Html.LabelFor(m => m.DirectDonateLink) %>
                     </div>
                     <div class="editor-field">
-                        <%: Html.PasswordFor(m => m.TwitterID) %>
+                        <%: Html.TextBoxFor(m => m.DirectDonateLink)%>
                     </div>
                     <div class="editor-label">
                     <i>
-                        <%: Html.LabelFor(m => m.DirectDonateLink)%> 
+                        <%: Html.LabelFor(m => m.SearchText)%> 
                         </i>
                     </div>
                     <div class="editor-field">
-                        <%: Html.PasswordFor(m => m.DirectDonateLink)%>
+                        <%: Html.TextBoxFor(m => m.SearchText)%>
                     </div>
                     <div class="editor-label">
                         <%: Html.LabelFor(m => m.CharityLogo)%>
                     </div>
                     <div class="editor-field">
-                        <%: Html.PasswordFor(m => m.CharityLogo)%> <input type="submit" value="Upload" /> <input type="submit" value="Register" />
+                        <%: Html.TextBoxFor(m => m.CharityLogo)%> <input type="submit" value="Upload" /> <input type="submit" value="Register" />
                     </div>
                     <p>
                         

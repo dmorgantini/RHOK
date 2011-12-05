@@ -72,13 +72,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\DataStore.xml" />
     <Content Include="Content\images\AddChrome.png" />
     <Content Include="Content\images\alert.png" />
     <Content Include="Content\images\bg-stripes.png" />
     <Content Include="Content\images\box1.png" />
     <Content Include="Content\images\box2.png" />
     <Content Include="Content\images\box3.png" />
+    <Content Include="Content\images\ChromeExtensionLogo.png" />
     <Content Include="Content\images\error.png" />
+    <Content Include="Content\images\Example1.png" />
     <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\footer_inset.gif" />
     <Content Include="Content\images\info.png" />
