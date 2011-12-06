@@ -1,40 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<!--
-	background.html
-	Copyright © 2009, 2010  WOT Services Oy <info@mywot.com>
-
-	This file is part of WOT.
-
-	WOT is free software: you can redistribute it and/or modify it
-	under the terms of the GNU General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.
-
-	WOT is distributed in the hope that it will be useful, but WITHOUT
-	ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
-	or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
-	License for more details.
-
-	You should have received a copy of the GNU General Public License
-	along with WOT. If not, see <http://www.gnu.org/licenses/>.
--->
-
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript" src="wot.js"></script>
-		<script type="text/javascript" src="cache.js"></script>
-		<script type="text/javascript" src="crypto.js"></script>
-		<script type="text/javascript" src="prefs.js"></script>
-		<script type="text/javascript" src="idn.js"></script>
-		<script type="text/javascript" src="url.js"></script>
-		<script type="text/javascript" src="api.js"></script>
-		<script type="text/javascript" src="background.js"></script>
-	</head>
-	<body>
-		<canvas id="wot-icon" width="19" height="19"/>
-	</body>
+<head>
+    <script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+    chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+        if (tab.url !== "http://www.guardian.co.uk/society/2011/dec/04/charities-welcome-cash-for-homes?INTCMP=SRCH" &&
+                tab.url !== "http://www.ted.com/speakers/sunitha_krishnan.html")
+            chrome.browserAction.setIcon({path: "skin/flying-heart-icon_19_mono.png"});
+        else
+            chrome.browserAction.setIcon({path: "skin/flying-heart-icon_19.png"});
+    });
+
+    chrome.tabs.onSelectionChanged.addListener(function(tabId, selectInfo) {
+        chrome.tabs.get(tabId, function (tab) {
+            if (tab.url !== "http://www.guardian.co.uk/society/2011/dec/04/charities-welcome-cash-for-homes?INTCMP=SRCH" &&
+                    tab.url !== "http://www.ted.com/speakers/sunitha_krishnan.html")
+                chrome.browserAction.setIcon({path: "skin/flying-heart-icon_19_mono.png"});
+            else
+                chrome.browserAction.setIcon({path: "skin/flying-heart-icon_19.png"});
+        });
+    });
+</script>
+</body>
 </html>

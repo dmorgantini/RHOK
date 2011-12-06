@@ -1,8 +1,4 @@
 $(document).ready(function() {
-    $('div').click(function() {
-        alert("wtf");
-    });
-
     var charity = {
         1: {
             name: "Empty Homes",
@@ -26,12 +22,18 @@ $(document).ready(function() {
         }
     };
 
+    $('<div style="font-size: 12px;"/>').appendTo(document.body).html('Charities on this page:');
 
     for (var id in charity) {
-        var qtipContent = '<a class="donation" href="'+ charity[id].donateLink +'" target="_blank">Donate Now</a>' +
+        var qtipContent = '<div><span style="display: block; margin-top: 10px; font-weight: bold;"> ' + charity[id].name + '</span>';
+        qtipContent = qtipContent + '<a class="donation" href="' + charity[id].donateLink + '" target="_blank">Donate Now</a>' +
             '&nbsp;|&nbsp;' +
-            '<a class="donation" href="link" target="_blank">View Charity Information</a>';
+            '<a class="donation" href="' + charity[id].infoLink + '" target="_blank">View Charity Information</a>';
 
+        if (charity[id].phoneNumber)
+            qtipContent = qtipContent + '<div>By Phone: ' + charity[id].phoneNumber + '</div>';
+
+        qtipContent = qtipContent + '</div>';
         $('<div />').appendTo(document.body).html(qtipContent);
     }
 
