@@ -1,7 +1,0 @@
-C:\Users\Swapi\RHOK\RHOK\UI\CharityClick\CharityClick\bin\CharityClick.dll
-C:\Users\Swapi\RHOK\RHOK\UI\CharityClick\CharityClick\bin\CharityClick.pdb
-C:\Users\Swapi\RHOK\RHOK\UI\CharityClick\CharityClick\bin\EntityFramework.dll
-C:\Users\Swapi\RHOK\RHOK\UI\CharityClick\CharityClick\bin\EntityFramework.xml
-C:\Users\Swapi\RHOK\RHOK\UI\CharityClick\CharityClick\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Swapi\RHOK\RHOK\UI\CharityClick\CharityClick\obj\Debug\CharityClick.dll
-C:\Users\Swapi\RHOK\RHOK\UI\CharityClick\CharityClick\obj\Debug\CharityClick.pdb
