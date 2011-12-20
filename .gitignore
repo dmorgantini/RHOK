@@ -1,5 +1,7 @@
 .idea
 .name
+.monitor
+.nodemonignore
 charityclicks.crx
 charityclicks.pem
 node_modules
