@@ -5,13 +5,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <head>
-        <!-- 
+        <!--
 
   Please do not remove this informations or keep link back to me on the bottom of the site
 
-  
 
-  Theme name: Universum 
+
+  Theme name: Universum
 
   Author's name: Martin 'duno' Polacik
 
@@ -21,25 +21,21 @@
 
   Time spent: 4 hours
 
-  
 
-  Licence and additional: 
 
-    - Free for Non-commercial use 
+  Licence and additional:
+
+    - Free for Non-commercial use
 
     - Icons created by Martin 'duno' Polacik ONLY for this theme
 
     - All example images used in theme are royalty free images
 
-      
 
-  Please do not remove this informations or keep link back to me on the bottom of the site  
+
+  Please do not remove this informations or keep link back to me on the bottom of the site
 
 /-->
-        <!-- TITLE /-->
-        <%--  <title>Charity Click</title>
-        --%>
-        <!-- TITLE end /-->
         <!-- ENCODING /-->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="Content-Language" content="EN" />
@@ -78,23 +74,18 @@
                     <img src="../../Content/images/ChromeExtensionLogo.png" alt="" title=""  width ="80"/>
                     <h1>
                         Charity <span>Click</span><sup>1.0</sup></h1>
-                    <%--<h1><a href="index.html">Charity <span>Click</span><sup>1.0</sup></a></h1>             --%>
                 </div>
                 <div id="topmenu">
                     <ul>
-                        <%--<li id="current"><a href="index.html" title="main page">home</a></li>--%>
                         <li>
                             <%: Html.ActionLink("Home", "Index", "Home")%>
                         </li>
-                        <%--<li><a href="index.html" title="">Register your charity</a></li>--%>
                         <li>
                             <%: Html.ActionLink("Register your charity", "Edit", "Home")%>
                         </li>
                     </ul>
                 </div>
             </div>
-            <!-- HEADER - end  /-->
-            <!-- IMAGE SPOTLITE /-->
             <div id="spotlite">
                 <h2>
                     See charities to donate to on the hover of your mouse</h2>
@@ -109,7 +100,6 @@
                     or click "view charity information" to find out more about them.
                 </p>
             </div>
-            <!-- IMAGE SPOTLITE - end /-->
             <div id="main_content">
                 <div id="main-block">
                     <h2>
@@ -119,9 +109,8 @@
                         mouse over the icon and click straight to the charity donation page. It's that simple.
                     </p>
                     <a href="http://www.chromeextensions.org/wp-content/uploads/2011/12/charityclicks3.crx">
-                        <img src="../../Content/images/AddChrome.png" alt="Install Chrome Extension Now">
-                        </img>
-                    </a>
+                        <img src="../../Content/images/AddChrome.png" alt="Install Chrome Extension Now" />
+                        </a>
                     <p>
                         Please install Chrome Extension and See how it works.. <a href="http://www.guardian.co.uk/society/2011/dec/04/charities-welcome-cash-for-homes?INTCMP=SRCH"
                             target="_blank">charities-welcome-cash-for-homes</a> <a href="http://www.ted.com/speakers/sunitha_krishnan.html"
@@ -131,12 +120,12 @@
                     <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" Text = "Charity Click">Tweet</a>
                     <script type="text/javascript" src="//platform.twitter.com/widgets.js">
                     </script>
-                    <p>
+                    <div>
                         <h2>
                             See example below 
                         </h2>
                         <img src="../../Content/images/Example2.png" />
-                    </p>
+                    </div>
                 </div>
                 <div style="clear: both;">
                 </div>

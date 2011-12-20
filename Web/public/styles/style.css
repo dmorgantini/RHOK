@@ -1,23 +1,7 @@
-﻿/*  
-  Please do not remove this informations or keep link back to me on the bottom of the site
-  
-  Theme name: Universum 
-  Author's name: Martin 'duno' Polacik
-  Author's web: www.fromhell.eu
-  Date created: 02.08.2010
-  Time spent: 4 hours
-  
-  Licence and additional: 
-    - Free for Non-commercial use 
-    - Icons created by Martin 'duno' Polacik ONLY for this theme
-    - All example images used in theme are royalty free images
-      
-  Please do not remove this informations or keep link back to me on the bottom of the site  
-*/
-body {
+﻿body {
 	margin: 0px;	
 	padding:15px;
-	background: #000 url(images/bg-stripes.png);
+	background: #000 url("../images/bg-stripes.png");
 	font: 75%/1.6 "trebuchet ms", "Geneva CE", lucida, sans-serif;
 }
 /*-----------------------------layout------------------*/
@@ -82,7 +66,7 @@ body {
   width:900px;
   height:300px;
   clear:both;
-  background: url(images/spotlite.jpg) no-repeat #fff;  
+  background: url("../images/spotlite.jpg") no-repeat #fff;
   border-bottom:1px solid #ccc;  
 }
 #spotlite h2{
@@ -111,7 +95,7 @@ body {
   clear:both; 
   overflow:hidden; 
   margin:0 auto;  
-  background: url(images/footer_inset.gif) repeat-x top left #191919;
+  background: url("../images/footer_inset.gif") repeat-x top left #191919;
 }
 .footer-left
 {
@@ -305,7 +289,7 @@ blockquote {
 .info{
   width:400px;
   border:solid 1px #DEDEDE;
-  background:#FFFFCC url(images/info.png) 6px 8px no-repeat;
+  background:#FFFFCC url("../images/info.png") 6px 8px no-repeat;
   color:#222222;
   margin:15px;
   padding:6px;
@@ -313,7 +297,7 @@ blockquote {
 .question{
   width:400px;
   border:solid 1px #DEDEDE;
-  background:#FFFFCC url(images/question.png) 6px 8px no-repeat;
+  background:#FFFFCC url("../images/question.png") 6px 8px no-repeat;
   color:#222222;
   margin:15px;
   padding:6px;
@@ -321,7 +305,7 @@ blockquote {
 .error{
   width:400px;
   border:solid 1px #DEDEDE;
-  background:#FFFFCC url(images/error.png) 6px 8px no-repeat;
+  background:#FFFFCC url("../images/error.png") 6px 8px no-repeat;
   color:#222222;
   margin:15px;
   padding:6px;
@@ -329,7 +313,7 @@ blockquote {
 .alert{
   width:400px;
   border:solid 1px #DEDEDE;
-  background:#FFFFCC url(images/alert.png) 6px 8px no-repeat;
+  background:#FFFFCC url("../images/alert.png") 6px 8px no-repeat;
   color:#222222;
   margin:15px;
   padding:6px;
