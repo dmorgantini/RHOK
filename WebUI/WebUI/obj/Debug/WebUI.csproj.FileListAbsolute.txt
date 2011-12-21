@@ -1,7 +1,0 @@
-C:\Users\Swapi\RHOK\RHOK\WebUI\WebUI\bin\WebUI.dll
-C:\Users\Swapi\RHOK\RHOK\WebUI\WebUI\bin\WebUI.pdb
-C:\Users\Swapi\RHOK\RHOK\WebUI\WebUI\bin\EntityFramework.dll
-C:\Users\Swapi\RHOK\RHOK\WebUI\WebUI\bin\EntityFramework.xml
-C:\Users\Swapi\RHOK\RHOK\WebUI\WebUI\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Swapi\RHOK\RHOK\WebUI\WebUI\obj\Debug\WebUI.dll
-C:\Users\Swapi\RHOK\RHOK\WebUI\WebUI\obj\Debug\WebUI.pdb
