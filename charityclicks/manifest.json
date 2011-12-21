@@ -1,6 +1,6 @@
 {
     "name": "CharityClick",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "See charities to donate to on the hover of your mouse",
     "icons": {
         "16": "skin/flying-heart-icon_16.png",
@@ -9,7 +9,8 @@
         "128": "skin/flying-heart-icon_128.png"
     },
     "permissions": [
-        "tabs"
+        "tabs",
+        "http://www.charityclick.net"
     ],
     "background_page": "background.html",
     "browser_action": {
@@ -18,7 +19,7 @@
         "popup": "ratingwindow.html",
         "css":[ "skin/charityClicks.css"],
         "js": [
-            "jquery.js", "jquery.qtip.min.js", "ratingWindow.js"
+            "jquery.min.js", "jquery.qtip.min.js", "ratingWindow.js"
         ]
     },
     "content_scripts": [
@@ -29,7 +30,7 @@
             ],
             "css":[ "skin/charityClicks.css"],
             "js": [
-                "jquery.js", "jquery.qtip.min.js", "charityClicks.js"
+                "jquery.min.js", "jquery.qtip.min.js", "model/charity.js", "charityClicks.js"
             ],
             "run_at": "document_start",
             "all_frames": true

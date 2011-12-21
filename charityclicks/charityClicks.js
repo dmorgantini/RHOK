@@ -1,32 +1,26 @@
 $(document).ready(function() {
+    // TODO: deal with caching this request
 
-    var charity = {
-        1: {
-            name: "Empty Homes",
-            donateLink: "https://secure.thebiggive.org.uk/donate/donate.php?charity_id=6651",
-            infoLink: "http://www.emptyhomes.com/"
-        },
-        2: { name: "Real Lettings",
-            donateLink: "http://www.broadwaylondon.org/HowYouCanHelp/Donate.html",
-            infoLink: "http://www.reallettings.com/",
-            phoneNumber: "text <b>BWAY11 £5</b> to <b>70070</b>"
-        },
-        3: { name: "Shelter",
-            donateLink: "http://england.shelter.org.uk/donate",
-            infoLink: "http://england.shelter.org.uk/",
-            phoneNumber: "call us on <b>0300 330 1234</b>"
-
-        },
-        4: { name: "Prajwala",
-            donateLink: "http://www.globalgiving.org/projects/a-new-shelter-for-sex-trafficking-victims-in-india",
-            infoLink: "http://www.prajwalaindia.com/"
-        }
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://www.charityclick.net/charities.json", true);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4) {
+        var resp = JSON.parse(xhr.responseText);
+        injectCharities(resp);
+      }
     };
+    xhr.send();
+});
 
-    for (var id in charity) {
+// TODO: add tests & refactor into a more appropriate classes
 
+// { name: '', id: '', donationInstructions: '' }
+function injectCharities(charities){
 
-        $('a:contains(' + charity[id].name + ')').each(function() {
+    for (var id in charities) {
+        var charity = new charityClick.charity(charities[id]);
+
+        $('a:contains(' + charity.name + ')').each(function() {
             var element = $('<div/>').appendTo(this).attr("style", "display: inline-block; " +
                 "width: 16px; " +
                 "height: 16px;" +
@@ -34,12 +28,12 @@ $(document).ready(function() {
                 "background: url('" + chrome.extension.getURL("skin/flying-heart-icon_16.png") + "')");
 
 
-            var qtipContent = '<a class="donation" href="' + charity[id].donateLink + '" target="_blank">Donate Now</a>' +
+            var qtipContent = '<a class="donation" href="' + charity.getDonateLink() + '" target="_blank">Donate Now</a>' +
                 '&nbsp;|&nbsp;' +
-                '<a class="donation" href="' + charity[id].infoLink + '" target="_blank">View Charity Information</a>';
+                '<a class="donation" href="' + charity.getInformationLink() + '" target="_blank">View Charity Information</a>';
 
-            if (charity[id].phoneNumber)
-                qtipContent = qtipContent +  '<div>By Phone: ' + charity[id].phoneNumber +'</div>';
+            if (charity.hasInformation())
+                qtipContent = qtipContent +  '<div>By Phone: ' + charity.getDonationInformation() +'</div>';
 
             $(element).qtip({
                 content: qtipContent,
@@ -49,4 +43,4 @@ $(document).ready(function() {
         });
     }
 
-});
+}
