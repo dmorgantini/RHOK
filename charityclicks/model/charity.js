@@ -19,7 +19,7 @@ charityClick.charity.prototype = {
     },
 
     hasInformation: function() {
-        return (this.information !== null);
+        return (this.information !== null && this.information !== "");
     },
 
     getDonationInformation: function () {

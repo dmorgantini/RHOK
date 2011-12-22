@@ -1,6 +1,6 @@
 {
     "name": "CharityClick",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "See charities to donate to on the hover of your mouse",
     "icons": {
         "16": "skin/flying-heart-icon_16.png",
