@@ -21,6 +21,11 @@ function injectCharities(charities){
         var charity = new charityClick.charity(charities[id]);
 
         $('a:contains(' + charity.name + ')').each(function() {
+
+            // this may be too restrictive
+            if ($.trim($(this).html().toLowerCase()) != charity.name.toLowerCase())
+                return;
+
             var element = $('<div/>').appendTo(this).attr("style", "display: inline-block; " +
                 "width: 16px; " +
                 "height: 16px;" +
