@@ -4,9 +4,7 @@
 var charityClick = charityClick || {};
 
 charityClick.charity = function (options) {
-    this.id = options.id;
-    this.name = options.name;
-    this.information = options.donationInstructions;
+    $.extend(this, options);
 };
 
 charityClick.charity.prototype = {
@@ -19,10 +17,10 @@ charityClick.charity.prototype = {
     },
 
     hasInformation: function() {
-        return (this.information !== null && this.information !== "");
+        return (this.donationInstructions && this.donationInstructions !== "");
     },
 
     getDonationInformation: function () {
-        return this.information; // TODO: this needs to ensure we are not injecting malicious html here
+        return this.donationInstructions;
     }
 };

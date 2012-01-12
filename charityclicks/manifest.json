@@ -1,7 +1,8 @@
 {
-    "name": "CharityClick",
-    "version": "0.0.5",
+    "name": "CharityClick (Alpha)",
+    "version": "0.0.7",
     "description": "See charities to donate to on the hover of your mouse",
+    "update_url": "http://www.charityclick.net/plugin/chrome-updates.xml",
     "icons": {
         "16": "skin/flying-heart-icon_16.png",
         "32": "skin/flying-heart-icon_32.png",

@@ -1,13 +1,13 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // TODO: deal with caching this request
 
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "http://www.charityclick.net/charities.json", true);
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState == 4) {
-        var resp = JSON.parse(xhr.responseText);
-        injectCharities(resp);
-      }
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4) {
+            var resp = JSON.parse(xhr.responseText);
+            injectCharities(resp);
+        }
     };
     xhr.send();
 });
@@ -15,16 +15,14 @@ $(document).ready(function() {
 // TODO: add tests & refactor into a more appropriate classes
 
 // { name: '', id: '', donationInstructions: '' }
-function injectCharities(charities){
+function injectCharities(charities) {
 
     for (var id in charities) {
         var charity = new charityClick.charity(charities[id]);
+        var next = false;
+        $('a[href*="' + charity.baseURI + '"]').each(function () {
 
-        $('a:contains(' + charity.name + ')').each(function() {
-
-            // this may be too restrictive
-            if ($.trim($(this).html().toLowerCase()) != charity.name.toLowerCase())
-                return;
+            if (next) return;
 
             var element = $('<div/>').appendTo(this).attr("style", "display: inline-block; " +
                 "width: 16px; " +
@@ -38,13 +36,15 @@ function injectCharities(charities){
                 '<a class="donation" href="' + charity.getInformationLink() + '" target="_blank">View Charity Information</a>';
 
             if (charity.hasInformation())
-                qtipContent = qtipContent +  '<div>By Phone: ' + charity.getDonationInformation() +'</div>';
+                qtipContent = qtipContent + '<div>By Phone: ' + charity.getDonationInformation() + '</div>';
 
             $(element).qtip({
-                content: qtipContent,
-                position: 'right',
-                hide: {fixed: true}
+                content:qtipContent,
+                position:'right',
+                hide:{fixed:true}
             });
+            next = true;
+
         });
     }
 
